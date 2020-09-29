@@ -113,8 +113,9 @@ nav ul li {
     padding-left:30px;
 }
 
-.enlarge {
-    flex-grow: 2;
+.double
+{
+    width:66%;
 }
 
 }

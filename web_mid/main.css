@@ -1,41 +1,3 @@
-/*color*/
-/*color*/
-.green-bg{
-    background-color: #33cc00;
-}
-
-.green{
-    color: #33cc00;
-}
-
-.orange-bg{
-    background-color: #ff9900;
-}
-
-.orange{
-    color: #ff9900;
-}
-
-.blue-bg{
-    background-color: #0099ff;
-}
-
-.blue{
-    color: #0099ff;
-}
-
-.black{
-    color: black;
-}
-
-.white{
-    color: white;
-}
-/*color*/
-/*color*/
-
-/*font*/
-/*font*/
 .carter{
 font-family: 'Carter One', cursive;
 }
@@ -44,29 +6,29 @@ font-family: 'Carter One', cursive;
 .raleway{
     font-family: 'Raleway', sans-serif;   
 }
-/*font*/
-/*font*/
+
+.green-bg{
+    background-color: #33cc00;
+}
+
+.orange-bg{
+    background-color: #ff9900;
+}
+
+.blue-bg{
+    background-color: #0099ff;
+}
 
 body{
     margin:0px;
-    background-color: #FFEFD6;
+    background-color:#D8E2DC;
 }
 
 header{
-    background-color: #FFEFD6;
+    background-color:#D8E2DC;
     padding:10px;
 }
 
-.margintop{
-    margin-top: 50px;
-}
-
-.height{
-    height: 300px;
-}
-
-/*nav*/
-/*nav*/
 img.nav-logo{
     max-width:100%;
     width:150px;
@@ -77,6 +39,12 @@ img.toggle-img{
     width:30px;
     padding-top:5px;
 }
+
+/* div{
+    width:300px;
+    margin:auto;
+    padding-top:20px;
+} */
 
 img.MainImg{
     width:300px;
@@ -115,164 +83,26 @@ nav ul a {
     font-family: 'Raleway', sans-serif;   
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 15px;
-    font-weight: bold;
-}
-/*nav*/
-/*nav*/
-
-
-a:link {
-    text-decoration: none;
-  }
-
-/*main page text*/
-/*main page text*/
-.since{
-    height: 340px;
-}
-
-.textformain{
-    text-align: center;
-    vertical-align: baseline;
-    margin-top: 270px;
-    line-height: 10px;
-
-    font-size: 28px;
-}
-
-.textforsandwich{
-    margin-top: 10px;
-    text-align: center;
     font-size: 20px;
+    font-weight: 300;
 }
-
-.textforsandwich2{
-    margin-top: 275px;
-    text-align: center;
-    font-size: 28px;
-}
-
-
-
-.centertext{
-    text-align: center;
-    vertical-align: baseline;
-    line-height: 230px;
-    font-size: 70px;
-    /* text-shadow: 2px 2px red;  */
-}
-
-.footertext{
-    text-align: center;
-    margin-top:30px;
-    font-size: 15px;
-}
-
-/*main page text*/
-/*main page text*/
-
-/*about page text*/
-/*about page text*/
-.abouttext{
-    text-align: center;
-    margin-top: 15px;
-    /* font-size: 25px; */
-}
-
-p{
-    padding: 10px;
-}
-
-.pforabout{
-    width:400px;
-    margin:auto;
-    margin-bottom: 150px;
-    padding-top: 30px;
-
-}
-
-.aboutmaintext
-{
-    font-size: 170px;
-    margin-top: -60px;
-    margin-left: 0px;
-}
-.aboutmaintext2
-{
-    font-size: 55px;
-    margin-top: -190px;
-}
-
-.aboutmaintext3
-{
-    font-size: 80px;
-    margin-top: -50px;
-    margin-bottom:0px;
-}
-
-.contacttext2{
-    margin-top: -20px;
-    text-align: center;
-}
-
-.contacttext3{
-    text-align: center;
-    margin-top: 5px;
-}
-
-.contacttext{
-    text-align: center;
-}
-
-.contactmain{
-    text-align: center;
-}
-
-
-
-/*about page text*/
-/*about page text*/
 
 
 .grid-container {
-    display: flex;
-    flex-direction: column;
-    /* grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
     gap: 10px;
     height: 100vh;
-    flex-direction: row;
-    justify-content: center; */
 }
 
-.grid-container3 {
-    display: flex;
-    flex-direction: column;
-    /* grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    gap: 10px;
-    height: 100vh;
-    flex-direction: row;
-    justify-content: center; */
-}
 
 .item1{
-    height: 300px;
     grid-column: 1/ span 2;
-    background-image: url(bottles.png);
-    background-size: 400px;
-    background-position:center;
-    background-repeat:no-repeat;
 }
 
 .item2 {
     grid-row: 2/ span 2;
-    background-image: url(sandwich2.jpg);
-    background-size: 350px;
-    background-position:center;
-    background-repeat:no-repeat;
-    height: 340px;
 }
 
 .item3 {
@@ -288,8 +118,11 @@ p{
 
 
 .grid-container2 {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    height: 100vh;
 }
 
 .item21{
@@ -310,7 +143,20 @@ p{
 .item24{
     grid-row: 2/span 1;
     grid-column: 3/ span 1;
-    
+}
+
+.item25{
+    grid-row: 3/ span 1;
+}
+
+.item26{
+    grid-row: 3/ span 1;
+    grid-column: 2/ span 1;
+}
+
+.item27{
+    grid-row: 3/ span 1;
+    grid-column: 3/ span 1;
 }
 
 
@@ -341,31 +187,6 @@ p{
     height: 10vh;
 }
 
-/*img in grid*/
-/*img in grid*/
-figure {
-    margin: 0;
-    padding: 0;
-}
-
-.aboutimg {
-    max-width: 100%;
-    max-height:100%;
-    display: block;
-    object-fit: cover;
-}
-.aboutmain{
-    width:400px;
-}   
-
-.aligncenter{
-    display:block;
-    width:400px;
-    margin:auto;
-}
-/*img in grid*/
-/*img in grid*/
-
 
 @media(min-width:768px){
 
@@ -391,102 +212,13 @@ figure {
         padding:10px 0px;
     }
 
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        gap: 10px;
-        height: 100vh;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .grid-container2{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    /* gap: 10px; */
-    height: 100vh;
-    }
-
-
-
     .grid-container, .grid-container2{
-    
+        width:500px;
         margin:auto;
         padding-top:20px;
-        
-    }
-    
-    .textformain{
-        text-align: left;
-        margin-left: 15px;
-        font-size: 50px;
-        line-height: 120px;
-        margin-top: 50px;
-        vertical-align: center;
-        /* text-shadow: 2px 2px #0099ff; */
     }
 
-    
-    .item1{
-        height: 200px;
-        background-image: url(bottles.png);
-        background-size: 400px;
-        background-position:right;
-        background-repeat:no-repeat;
-    }
-    
-    .footertext{
-        text-align: center;
-        font-size: 15px;
-    }
 
-    .pforabout{
-        width:800px;
-        margin:auto;
-        padding-bottom: 150px;
-    }
- 
-    .aboutmain{
-        display: inline-block;
-        height: 300px;
-    }
-    
-    .aligncenter{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } 
-
-    .aboutmaintext
-    {
-        font-size: 300px;
-        margin-top: -110px;
-        margin-left: 0px;
-    }
-    .aboutmaintext2
-    {
-        font-size: 115px;
-        margin-top: -280px;
-    }
-
-    .aboutmaintext3
-    {
-        font-size: 165px;
-        margin-top: -100px;
-        margin-bottom:0px;
-    }
-
-    .contactmain{
-        text-align: center;
-    }
-    
-    .contacttext2{
-        margin-top: -20px;
-        text-align: center;
-    }
-    
 }
 
     @media (min-width: 1024px){
@@ -497,8 +229,8 @@ figure {
     }
 
     nav ul a {
-        font-size: 20px;
-        font-weight: 600;
+        font-size: 25px;
+        font-weight: 400;
     }
 
     nav ul li{
@@ -506,67 +238,11 @@ figure {
     }
 
     .grid-container, .grid-container2{
-        
+        width:800px;
         margin:auto;
         padding-top:20px;
     }
-    
-    .textformain{
-        font-size: 60px;
-        vertical-align: center;
-        margin-top: 40px;
-        line-height: 120px;
-    }
-
-        .aboutmaintext
-    {
-        font-size: 375px;
-        margin-top: -110px;
-        margin-left: 0px;
-    }
-    .aboutmaintext2
-    {
-        font-size: 115px;
-        margin-top: -400px;
-    }
-
-    .aboutmaintext3
-    {
-        font-size: 165px;
-        margin-top: -100px;
-        margin-bottom:0px;
-    }
-
-    .grid-container3{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        /* gap: 10px; */
-        height: 100vh;
-        flex-direction: row;
-        justify-content: center;
-        margin:auto;
-        padding-top:20px;
-        }
 
 
-        .contactmain{
-            font-size: 40px;
-        }
 
-        .contacttext2{
-            /* margin-top: 15px; */
-            text-align: center;
-        }
-        
-
-        .item31{
-            height:320px;
-        }
-        
-        
-        .item32{
-            height: 320px;
-        }
-    
     } 

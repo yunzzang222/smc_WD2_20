@@ -1,0 +1,20 @@
+body {
+    margin: 0px;
+}
+
+h1{
+    font-size: 300px;
+    margin-top:0px;
+    margin-left: 20px;
+}
+
+button{
+    width: 200px;
+    height: 60px;
+    display: inline-block;
+    border:none;
+    font-family: 'Courier New', Courier, monospace;
+    background-color : rgba(00, 00, 00, 0.5);
+    color: white;
+    
+}

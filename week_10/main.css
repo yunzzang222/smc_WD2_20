@@ -1,0 +1,80 @@
+    img.logo{
+        max-width:100%;
+        width:150px;
+        padding-left:10px;
+        padding-top: 10px;
+    }
+    
+    img.toggle-button{
+        width:50px;
+        padding-top:10px;
+        padding-right:10px;
+    }
+    
+    input#toggleAssist{
+        display:none;
+    }
+    
+    input#toggleAssist:checked +ul{
+        display:block;
+    }
+    
+    label[for="toggleAssist"]{
+        float:right;
+    }
+    
+    nav ul{
+        list-style:none;
+        margin:0px;
+        padding:20px 0px 0px;
+        display:none;
+        
+    }
+    
+    nav ul li{
+        padding:10px 0px;
+        /* border-bottom:1px solid purple; */
+        text-align: right;
+    }
+    
+    nav ul li:last-child{
+        border-bottom:none;
+    }
+    
+    nav ul a {
+        color:purple;
+        font-family: 'Tangerine', cursive;   
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    a:link {
+        text-decoration: none;
+      }
+
+    img{
+        width:200px;
+    }
+    
+    .holder{
+    text-align:center;
+    }
+    
+    .center{
+    display:inline-block;
+    }
+
+    .container {
+        position: relative;
+        display: none;
+      }
+
+      .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: black;
+        font-size: 35px;
+        cursor: pointer;
+      }

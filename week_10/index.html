@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="main.css" rel="stylesheet">
+
+    <title>Prince(´ ∀ ` *)</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <img src="princetext_logo.png" class="logo" alt="company logo">  
+            <label for="toggleAssist">
+              <img src="prince_logo.png" class="toggle-button" alt="toggle1" id="hamburgerImg">
+            </label>
+            <input type="checkbox" id="toggleAssist">
+      
+            <ul class="nav-links">
+              <li><a href="">Purple Rain</a></li>
+             <li><a href="">1999</a></li>
+            <li><a href="">Controversy</a></li>
+            <li><a href="">Prince</a></li>
+            </ul>
+      
+        </nav>
+      
+    </header>
+
+    <main>
+        <script src="script.js"></script>
+        <div class="holder">
+        <div class="center">
+        <img src="pp.jpg" alt="prince1" onclick="enlarge(this);">
+        <img src="1999.jpg" alt="prince2" onclick="enlarge(this);">
+        <img src="controversy.jpg" alt="prince3" onclick="enlarge(this);">
+        <img src="prince.jpg" alt="prince4" onclick="enlarge(this);">
+        </div>
+        </div>
+    
+
+    <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:40%; display:block; margin:auto;">
+    <div id="imgtext"></div>
+    </div>
+         
+       
+    </main>
+
+    
+</body>
+</html>

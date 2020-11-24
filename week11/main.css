@@ -1,0 +1,27 @@
+body{
+    background-color: #FEFAE0;
+}
+
+img{
+    width: 1000px;
+    height: 600px;
+    display: block;
+    margin:auto;
+}
+
+label{
+    font-size: 60px;
+    font-family: 'Modak', cursive;
+    color: #283618;
+}
+
+form{
+    width:50%;
+    margin:auto;
+}
+
+select{
+    width:100px;
+    height:20px;
+}
+

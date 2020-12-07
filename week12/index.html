@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <title>Christmas</title>
+
+</head>
+<body class="green-bg">
+    <main>  
+        <div class="holder">
+            <div class="center">
+                <div class="width"><img src="c1.jpg" class="c1">
+                    <button id="toggleTree">Toggle</button></div>
+                <div class="width"><img src="c2.jpeg" class="c2">
+                    <button id="toggleGift">Toggle</button></div>
+                <div class="width"><img src="c3.jpeg" class="c3">
+                    <button id="toggleBell">Toggle</button></div>
+                <div class="width"><img src="c4.jpg" class="c4">
+                    <button id="toggleWreath">Toggle</button></div>
+            </div>
+        </div>
+
+        <div class="holder">
+            <div class="button">
+                
+                <button id="fadeOutBtn">Fade out</button>
+
+                <button id="slideUpBtn">Slide up</button>
+
+                <button id="animate">Bigger</button>
+
+            </div>
+         </div>
+
+         <script>
+         $(document).ready(function(){
+
+            $("#toggleTree").click(function(){
+                var a;
+                if (a % 2 == 0){
+                $(".c1").hide();}
+                else{
+                    $(".c1").toggle(); 
+                }
+                $(".images").append('<h1>Image Hidden Now!</h1>')
+            });
+
+            $("#toggleGift").click(function(){
+                var a;
+                if (a % 2 == 0){
+                $(".c2").hide();}
+                else{
+                    $(".c2").toggle(); 
+                }
+            });
+
+            $("#toggleBell").click(function(){
+                var a;
+                if (a % 2 == 0){
+                $(".c3").hide();}
+                else{
+                    $(".c3").toggle(); 
+                }
+            });
+
+            $("#toggleWreath").click(function(){
+                var a;
+                if (a % 2 == 0){
+                $(".c4").hide();}
+                else{
+                    $(".c4").toggle(); 
+                }
+            });
+
+        
+            $("#fadeOutBtn").click(function () {
+                $('.c1').fadeOut(4000, function () {
+                $(".button").append('<h1>Merry Christmas</h1>')
+                    });
+            })
+        
+
+            $("#slideUpBtn").click(function () {
+            $('.c2').slideUp(2000)
+            })
+        
+            $("#animate").click(function(){
+                
+                $(".c3").animate({
+                    height: "350px",
+                    width: "500px"
+                }, 1000);
+                })
+                
+
+        });
+    </script>
+    </main>
+
+ 
+</body>
+</html>

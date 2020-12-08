@@ -1,0 +1,207 @@
+body{
+    margin:0px;
+}
+
+header{
+    margin-top: 10px;
+}
+
+.raleway{
+    font-family: 'Raleway', sans-serif;   
+}
+
+
+/* nav */
+/* nav */
+img.nav-logo{
+    width:150px;
+    padding-left:10px;
+}
+
+img.toggle-img{
+    width:30px;
+    padding-top:5px;
+    padding-right:5px;
+}
+
+input#Toggle{
+    display:none;
+}
+
+input#Toggle:checked +ul{
+    display:block;
+}
+
+label[for="Toggle"]{
+    float:right;
+}
+
+nav ul{
+    list-style:none;
+    margin:0px;
+    padding:20px 0px 0px;
+    display:none;
+}
+
+nav ul li{
+    padding:10px 0px;
+    border-bottom:1px solid #716450;
+}
+
+nav ul li:last-child{
+    border-bottom:none;
+}
+
+nav ul a {
+    color:#716450;
+    font-family: 'Raleway', sans-serif;   
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* nav */
+/* nav */
+
+
+
+.mainImg{
+    width:500px;
+    padding-top: 30px;
+    margin:0px;
+}
+
+.holder{
+    text-align:center;
+}
+
+.mainP{
+    font-family: 'Raleway', sans-serif; 
+    font-size:15px;
+    background-color: #e28d2b;
+    color:white; 
+    padding:20px 20px;
+    margin:0px;
+}
+
+footer{
+    background-color: #716450;
+    position: fixed;
+    bottom:0;left:0;right:0;height:100px;
+}
+.footerP{
+    font-family: 'Raleway', sans-serif; 
+    color:white;
+    margin:0px;
+    padding:5px;
+}
+
+.item11{
+    grid-column: 1/ span 3;
+    background-color: #e28d2b;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+
+.item12{
+    grid-row: 2/ span 1;
+}
+
+
+.item13{
+    grid-row: 2/ span 1;
+    grid-column: 2/ span 1; 
+}
+
+.item14{
+    grid-row: 2/span 1;
+    grid-column: 3/ span 1;
+    
+}
+.aboutmain{
+    width:400px;
+} 
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutimg{
+    width:100%;
+}
+
+.aligncenter{
+    display:inline-block;
+    width:400px;
+    margin:auto;
+}
+
+.pAbout{
+    width:800px;
+    margin:auto;
+    padding:5px;
+
+}
+
+
+
+
+@media (min-width: 1024px){
+
+    label[for="Toggle"]{
+        display:none;
+    }
+
+    nav ul{
+        display:block;
+        float:right;
+        padding-top: 20px;
+    }
+
+    nav ul a {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    nav ul li{
+        border:none;
+        display:inline-block;
+        margin-right:20px;
+        padding:10px 0px;
+    }
+
+    img.nav-logo{
+        width:200px;
+        padding-left:10px;
+    }
+
+    .mainImg{
+        width:1000px;
+        padding-top: 30px;
+        margin:0px;
+    }
+    .center{
+        width: 1000px;
+        margin: auto;
+    }
+
+    .mainP{
+        font-family: 'Raleway', sans-serif; 
+        font-size:20px;
+        background-color: #e28d2b;
+        color:white; 
+        padding:20px 20px;
+        margin:0px;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        /* gap: 10px; */
+        height: 100vh;
+        }
+}

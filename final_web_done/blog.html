@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src ="logo.png" alt="logo" class="nav-logo">
+            <label for="Toggle">
+                <img src ="menu.png" alt="toggle" class="toggle-img">
+            </label>
+            <input type="checkbox" id="Toggle">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+            <div class="blogW">
+                <div class="space">
+                <p class="raleway blogB" style="margin-top:50px;">“Essential Giving” at Friends in Deed</p>
+                <img src="b1.jpg" class="bImg" id="b1">
+                <p class="raleway blogS">Among the many lessons of 2020 is that community is of utmost importance and taking care of one another is the best definition of “essential.” The PCF COVID-19 Response Fund grantees are especially relying on community care and giving this year. With the winter holidays just around the corner, we spotlight how Friends in Deed…</p>
+                <button id="toggle">Toggle Photo</button>
+            </div>
+
+            <div class="space">
+                <p class="raleway blogB">Nourishing Our Neighbors for the Holidays</p>
+                <img src="b2.png" class="bImg" id="b2">
+                <p class="raleway blogS">As the holiday season unfolds each year, nourishing food, gratitude, and community giving take center stage, and nowhere is this more evident than at charitable organizations addressing the food needs of Pasadena-area residents. This week we spotlight two of PCF’s recent 2020 COVID-19 Response Fund grantees, Union Station Homeless Services and Foothill Unity Center, to…</p>
+                <button id="toggle2">Toggle Photo</button>
+            </div>
+
+                <div class="space" style="margin-bottom:100px">
+                <p class="raleway blogB">PCF awards $2.6 million in Grants in 2020</p>
+                <img src="b3.jpg" class="bImg" id="b3">
+                <p class="raleway blogS">PCF understands that as coronavirus continues, many residents and organizations still struggle with meeting day-to-day needs — that’s why a new series of grants were recently distributed providing $460,000 to a range of organizations that serve disproportionately impacted communities with emergency assistance, such as access to technology, rent support, food, healthcare, and childcare. By the…</p>
+                <button id="toggle3">Toggle Photo</button>
+            </div>
+         </div>
+
+
+
+    <div class="footerP footer2">
+        <div class="grid">
+            <div class="item1">
+                <div class="holder">
+                    <div class="centerF">
+                    <a href="https://www.facebook.com/pasadenacf"><img src="facebook.png" class="footimg2"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item2">
+                <div class="holder">
+                    <div class="centerF">
+                    <a href="https://www.instagram.com/bigheartsmallfilm/"><img src="insta.png" class="footimg"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item3">
+                <div class="holder">
+                    <div class="centerF">
+                    <a href ="https://www.youtube.com/user/PasadenaCF1/videos?view_as=subscriber"> <img src= "youtube copy.png" class="footimg"></a>
+                    </div>
+                </div>    
+            </div>
+            
+            
+            </div>
+        
+        <p class="footerP footerW">301 E. Colorado Blvd., Suite 810
+            Pasadena CA 91101
+            Tel: (626) 796-2097
+            Fax: (626) 583-4738
+            pcfstaff@pasadenacf.org</p>
+
+        </div>
+
+
+    </div>
+
+
+    <script>
+        $(document).ready(function(){
+
+           $("#toggle").click(function(){
+               var a;
+               if (a % 2 == 0){
+               $("#b1").hide();}
+               else{
+                   $("#b1").toggle(); 
+               }
+               
+           });
+
+           $("#toggle2").click(function(){
+               var a;
+               if (a % 2 == 0){
+               $("#b2").hide();}
+               else{
+                   $("#b2").toggle(); 
+               }
+               
+           });
+
+           $("#toggle3").click(function(){
+               var a;
+               if (a % 2 == 0){
+               $("#b3").hide();}
+               else{
+                   $("#b3").toggle(); 
+               }
+               
+           });
+        });
+    </script>
+
+    
+</body>
+</html>

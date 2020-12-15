@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src ="logo.png" alt="logo" class="nav-logo">
+            <label for="Toggle">
+                <img src ="menu.png" alt="toggle" class="toggle-img">
+            </label>
+            <input type="checkbox" id="Toggle">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="holder">
+        <div class="center">
+            <p class="donateB">DONATE NOW</p>
+            <img src="donation.jpg" class="donateImg">
+            <p class="donateS">With your gift to the PCF you become one of the many generous philanthropists who have invested in the strength of our community and the health and well-being of our neighbors.<br><br>
+                <b>Thank you for your commitment to Pasadena and its people!</b></p>
+         
+                <form action="action_page.php" class="raleway white darkblueB">
+
+                    <h1 style="padding-top:20px;padding-bottom:20px" >Donor information</h1>
+      
+                    <label for="firstN">First Name</label>
+                    <input type="text" id="firstN" name="firstame">
+                
+                    <label for="lastN">Last Name</label>
+                    <input type="text" id="lastN" name="lastname">
+
+                    <label for="pnum">Phone Number</label>
+                    <input type="number" id="pnum" name="phoneN" placeholder="XXX-XXX-XXXX">
+          
+                    <label for= "comment">Comment</label>
+                    <textarea id="comment" name="commentarea" rows="4" cols="50">
+                        Comment (optional)...
+                        </textarea>
+
+      
+                    <h1 style="padding-bottom:20px;padding-top:40px">Payment Information</h1>
+              
+                  <label for="fullname">Full name</label>  
+                  <input type="text" id="fullN" name="fullname">
+      
+                  <label for="email">E mail</label>
+                  <input type="text" id="email" name="Email">
+      
+                  <label for="cardN">Card Number</label>
+                  <input type="number" id="cardN" name="cardnumber">
+
+                  <label for="ED">Expiration Date</label>
+                  <input type="number" id="ED" name="expdate" placeholder="MM/DD/YY">
+
+                  <label for="CVV">CVV</label>
+                  <input type="number" id="CVV" name="cvv" placeholder="three digit number on the back of the card">
+
+                  <label for="amount">Amount</label>
+                  <select>
+                    <option value="0">Select Amount</option>
+                    <option value="1">$10</option>
+                    <option value="2">$20</option>
+                    <option value="3">$30</option>
+                    <option value="4">$50</option>
+                    <option value="5">$100</option>
+                  </select>
+            
+                    
+                  <input type="submit" value="Submit" id="submit">
+                
+                  </form> 
+
+                  <div id="ty">
+                   
+                  </div>
+
+                  
+                  
+         
+         
+        </div>
+    </div>    
+
+    <div class="footerP footer2">
+        <div class="grid">
+            <div class="item1">
+                <div class="holder">
+                    <div class="centerF">
+                    <a href="https://www.facebook.com/pasadenacf"><img src="facebook.png" class="footimg2"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item2">
+                <div class="holder">
+                    <div class="centerF">
+                    <a href="https://www.instagram.com/bigheartsmallfilm/"><img src="insta.png" class="footimg"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item3">
+                <div class="holder">
+                    <div class="centerF">
+                    <a href ="https://www.youtube.com/user/PasadenaCF1/videos?view_as=subscriber"> <img src= "youtube copy.png" class="footimg"></a>
+                    </div>
+                </div>    
+            </div>
+            
+            </div>
+        
+        <p class="footerP footerW">301 E. Colorado Blvd., Suite 810
+            Pasadena CA 91101
+            Tel: (626) 796-2097
+            Fax: (626) 583-4738
+            pcfstaff@pasadenacf.org</p>
+
+        </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script>
+        $('form').submit(function(event){ event.preventDefault(); });
+    
+        $(document).ready(function(){
+            $("#submit").click(function(){
+                $("form").toggle(500);
+                $("#ty").append('<h2>Thank you for your donation!</h2>')
+            
+            })
+    
+        });
+    </script>
+    
+</body>
+
+</html>
